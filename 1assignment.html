@@ -4,143 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Assignment</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="tyfpng.png">
+
+    <!-- Internal CSS (Required for Evaluation Criterion 1) -->
+    <style>
+        .internal-note {
+            font-size: 0.9rem;
+            color: #475569;
+        }
+        p{
+            font-size: 1.1rem;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Step 1. Structure text using HTML tags
-Add headings <h1> to <h3> with your name, course, and "About Me".
-Add a short paragraph <p> describing yourself. -->
+    <div class="Header">
+        <!-- Step 1. Structure text using HTML tags -->
+        <div style="background-color: burlywood;">
+            <h2 class="P-relative">Course: WEB Technologies</h2> 
+            <h3 class="P-static">About Me</h3>
+            <p>I am a student at Astana IT University (AITU) in Astana, actively involved in student life through the TYF Media club.<br> I work professionally in video production, editing, motion design, and filming (using equipment such as the Sony α6700 and DaVinci Resolve), while simultaneously studying web development.</p>
+        </div>
+        <h1 id="main-heading" class="highlight P-absolute">Dudkin Alexandr</h1>
+        <br>
+    </div>
 
-    <h1>Dudkin Alexandr</h1>
-    <h2>Course: WEB Technologies</h2>
-    <h3>About Me</h3>
-    <p>I am a student at Astana IT University (AITU) in Astana, <br> actively involved in student life through the TYF Media club.<br> I work professionally in video production, editing, motion design,<br> and filming (using equipment such as the Sony α6700 and DaVinci Resolve), while simultaneously studying web development, <br>discrete mathematics, and the Kazakh language.</p>
+    <div class="main-content">
+        <!-- Step 2. HTML Lists -->
+        <div class="Lists" style="text-align: center; width: 48%; margin: auto;">
+            <h2 style="width: 30%; margin: auto; background-color: rgb(255, 212, 157); padding: 10px; border: 1px solid #334155;">My Hobbies</h2>
+            <h3 class="highlight">My Hobbies (Ordered List)</h3>
+            <ol style="width: 30%; margin: auto;">
+                <li>Videography</li>
+                <li>Photography</li>
+                <li>Video editing</li>
+            </ol>
 
-    <br>
+            <h3>Favorite Websites</h3>
+            <ul style="width: 30%; margin: auto;"">
+                <li><a href="https://recall.tallfly.me/" target="_blank">For education</a></li>
+                <li><a href="https://www.github.com" target="_blank">For coding</a></li>
+                <li><a href="https://gemini.google.com" target="_blank">For psychological help</a></li>
+            </ul>
+        </div>
 
-    <!-- Step 2. HTML Lists -->
-<!-- Create an ordered list <ol> of your hobbies. -->
-<!-- Create an unordered list <ul> of your favorite websites. -->
-    <h2>My Hobbies</h2>
-    <h3>My Hobbies (Ordered List)</h3>
-    <ol>
-        <li>Videography</li>
-        <li>Photography</li>
-        <li>Video editing</li>
-    </ol>
+        <!-- Step 3. Images and Links -->
+        <br>
+        <img src="me.jpg" alt="My photo" width="200"><br><br>
+        
+        <!-- Step 4. HTML Buttons -->
+        <button type="button">Click Me</button>
+        <br>
 
-    <h3>Favorite Websites</h3>
-    <ul>
-        <li><a href="https://recall.tallfly.me/" target="_blank">For education</a></li>
-        <li><a href="https://www.github.com" target="_blank">For coding</a></li>
-        <li><a href="https://gemini.google.com" target="_blank">For psychological help</a></li>
-    </ul>
-    <!-- Step 3. Images and Links
-Insert your photo using the <img> tag.
-Add at least two clickable links with <a> (e.g., to your favorite websites).-->
-    <img src="me.jpg" alt="Me" width="150">
-    <a href="https://recall.tallfly.me/" target="_blank"></a><br>
-    <a href="https://www.github.com" target="_blank"></a><br>
-    <a href="https://gemini.google.com" target="_blank"></a><br>
-    
+        <!-- Step 5. Tables -->
+        <h2 class="highlight">Class Schedule</h2>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Monday</td>
+                    <td>10:00 AM - 11:30 AM</td>
+                </tr>
+                <tr>
+                    <td>Parkour Practice</td>
+                    <td>Wednesday</td>
+                    <td>01:00 PM - 09:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Learning</td>
+                    <td>Friday</td>
+                    <td>09:00 AM - 09:09 AM</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <!-- Step 4. HTML Buttons
-Add a simple button with text "Click Me". (No functionality required yet).
+        <hr>
+        
 
-Part 2. Intermediate HTML -->
-    <button type="button">Click Me</button>
-    <!-- Step 5. Tables
-Create a table with 3 columns: "Subject", "Day", "Time".
-Fill in a simple weekly class schedule. -->
-    <br> 
-    <h2>Class Schedule</h2>
-    <table border="1" cellpadding="8">
-        <thead>
+        <!-- Step 6. Two-Column Table Layout -->
+        <h2>Two-Column Table Layout</h2>
+        <table border="1" width="100%" cellpadding="10">
             <tr>
-                <th>Subject</th>
-                <th>Day</th>
-                <th>Time</th>
+                <td width="25%" valign="top">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li style="font-weight: bold; border: 3px solid #334155; padding: 5px; margin-bottom: 5px;"><a href="#about">About</a></li>
+                        <li style="font-weight: bold; border: 3px solid #334155; padding: 5px; margin-bottom: 5px;"><a href="#hobbies">Hobbies</a></li>
+                        <li style="font-weight: bold; border: 3px solid #334155; padding: 5px; margin-bottom: 5px;"><a href="#schedule">Schedule</a></li>
+                        <li style="font-weight: bold; border: 3px solid #334155; padding: 5px; margin-bottom: 5px;"><a href="#contact">Contact</a></li>
+                    </ul>
+                </td>
+                <td width="75%" valign="top">
+                    <h3>Main Content Area</h3>
+                    <p>This side of the table layout acts as the primary content region of the webpage.</p>
+                </td>
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>HTML</td>
-                <td>Monday</td>
-                <td>10:00 AM - 11:30 AM</td>
-            </tr>
-            <tr>
-                <td>Parkur Practice</td>
-                <td>Wednesday</td>
-                <td>01:00 PM - 09:30 PM</td>
-            </tr>
-            <tr>
-                <td>Learning</td>
-                <td>Friday</td>
-                <td>09:00 AM - 9:09 AM</td>
-            </tr>
-        </tbody>
-    </table>
+        </table>
 
-    <hr>
+        <hr>
 
-    <!-- Step 6. Using Tables for Layout (Optional Challenge)
-Create a two-column layout using a table: left column (menu), right column (main content). -->
-    <h2>Two-Column Table Layout</h2>
-    <table border="1" width="100%" cellpadding="10">
-        <tr>
-            <td width="25%" valign="top">
-                <h3>Navigation</h3>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </td>
-            <td width="75%" valign="top">
-                <h3>Main Content Area</h3>
-                <p>This side of the table layout acts as the primary content region of the webpage.</p>
-            </td>
-        </tr>
-    </table>
+        <!-- Step 7. Emojis (Includes Inline CSS for Criterion 1) -->
+        <h2>Mood Today</h2>
+        <p style="font-weight: 500;">Today I am feeling super happy 😊, motivated 🚀, and ready to learn 💡!</p>
 
-    <hr>
+        <hr>
+    </div>
 
-<!-- Step 7. Typing Emojis
-Add at least 3 emojis inside a paragraph about your mood today. -->
-    <h2>Mood Today</h2>
-    <p>Today I am feeling super happy 😊, motivated 🚀, and ready to learn 💡!</p>
+    <div class="footer">
+        <!-- Step 8. HTML Forms -->
+        <h2>Contact Form</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
-    <hr>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-   <!-- Step8. HTML Forms
-Create a form with the following fields:
-Name (text input)
-Email (email input)
-Favorite Color (color input)
-A Submit button -->
-    <h2>Contact Form</h2>
-    <form action="#" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+            <label for="color">Favorite Color:</label><br>
+            <input type="color" id="color" name="color"><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+        <hr>
 
-        <label for="color">Favorite Color:</label><br>
-        <input type="color" id="color" name="color"><br><br>
+        <!-- Task 11: Float & Clear Section -->
+        <div class="card clearfix-container">
+            <h2>Task 11: Float & Clear Layout</h2>
+            <div class="float-box float-left">
+                <h4>Box 1</h4>
+                <p>My assignment for web</p>
+            </div>
+            <div class="float-box float-right">
+                <h4>Box 2</h4>
+                <p>My assignment for web</p>
+            </div>
 
-        <input type="submit" value="Submit">
-    </form>
-
-    <!-- Step 9. Publish Your First Website
-Use GitHub Pages or Netlify to publish your home.html.
-Submit the URL link along with your files  -->
+            <div class="clear-fix"></div>
+            <p class="post-float-text">This is my assignment for web, last task.</p>
+        </div>
+    </div>
 </body>
 </html>
-
-
-
-
-
-
